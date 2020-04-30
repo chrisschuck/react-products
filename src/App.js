@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ProductList from './components/product-list';
+import computersData from './static-data/computers';
+import moviesData from './static-data/movies';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="primary-header">
+        <h1 className="primary-heading">Logo</h1>
       </header>
+      <main>
+        <div className="products-wrapper">
+          <h2 className="products-heading">Computers</h2>
+          <ProductList products={computersData} />
+        </div>
+        <div className="products-wrapper products-wrapper--large-gap-top">
+          <h2 className="products-heading">Movies</h2>
+          <ProductList products={moviesData} />
+        </div>
+      </main>
+      <footer className="primary-footer">
+        <h2 className="footer-heading">Logo</h2>
+      </footer>
     </div>
   );
 }

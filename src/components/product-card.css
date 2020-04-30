@@ -1,0 +1,75 @@
+/*
+  FIXME: I didn't want to go beyond the spec, which called for desktop styles only.
+  Normally I would style mobile-first with min-width values.
+*/
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 calc(33.333% - 1em);
+  margin: 0.5em;
+  padding: 1.5em;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 10px #0000001A;
+  border: 3px solid #B9DDFF;
+  border-radius: 32px;
+}
+
+.product-card__heading {
+  font-size: 24px;
+  line-height: 1.35;
+  flex-basis: 64px;
+}
+
+.product-card__description {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #778087;
+  margin-top: 0.7222em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 500 18px 'Montserrat', sans-serif;
+  color: #778087;
+  margin-top: 0.777em;
+}
+
+.progress,
+.progress__inner {
+  height: 8px;
+  border-radius: 5px;
+}
+.progress {
+  width: 144px;
+  background: #EBEBEB;
+}
+
+.progress__inner {
+  width: 117px;
+  background: #388CFF;
+}
+
+.margin-left-small {
+  margin-left: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #3AB3FF;
+}
+
+.link--centered-graphic {
+  display: inline-flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0.875em;
+}
